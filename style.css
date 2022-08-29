@@ -8,12 +8,12 @@
   font-family: "Noto Sans Arabic", Tahoma;
 }
 
-/* .container {
+.container {
   max-width: 80rem;
   margin: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-} */
+}
 
 body {
   display: flex;
