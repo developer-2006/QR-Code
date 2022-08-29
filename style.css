@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Arabic", Tahoma;
+}
+
+.container {
+  max-width: 80rem;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(26, 188, 156);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(26, 188, 156, 1) 0%,
+    rgba(142, 68, 173, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(26, 188, 156, 1) 0%,
+    rgba(142, 68, 173, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(26, 188, 156, 1) 0%,
+    rgba(142, 68, 173, 1) 100%
+  );
+}
+
+.box {
+  max-width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 3rem 2rem 2rem;
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark),
+    inset -0.2rem -0.2rem 1rem var(--primary-light);
+  transform: translatey(0px);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+.title {
+  font-family: "Lalezar", Tahoma;
+  color: #323333fd;
+}
+
+.box form {
+  margin: 15px 0px 25px;
+}
+
+.box form :where(input, button) {
+  outline: 0;
+  border: 0;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.box form input {
+  border: 1px solid #999;
+  font-size: 14px;
+}
+
+.box form button {
+  background: rgb(26, 188, 156);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(26, 188, 156, 1) 0%,
+    rgba(142, 68, 173, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(26, 188, 156, 1) 0%,
+    rgba(142, 68, 173, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(26, 188, 156, 1) 0%,
+    rgba(142, 68, 173, 1) 100%
+  );
+  color: #fff;
+  margin-top: 1.4rem;
+}
+
+.qr-code {
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem 3rem 2rem 3rem;
+}
+
+.screenshot {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #999;
+  margin: 20px 0 0 0;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .title {
+    font-size: 30px;
+  }
+  .box {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .box form input {
+    font-size: 13px;
+  }
+}
