@@ -151,3 +151,27 @@ body {
     font-size: 13px;
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 80rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 80rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 650px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
