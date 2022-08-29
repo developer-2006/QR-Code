@@ -8,12 +8,12 @@
   font-family: "Noto Sans Arabic", Tahoma;
 }
 
-.container {
+/* .container {
   max-width: 80rem;
   margin: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-}
+} */
 
 body {
   display: flex;
@@ -152,13 +152,13 @@ body {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   .container {
     max-width: 80rem;
   }
-}
+} */
 
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
   .container {
     max-width: 80rem;
   }
@@ -174,4 +174,4 @@ body {
   .container {
     max-width: 100%;
   }
-}
+} */
